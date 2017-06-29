@@ -11,6 +11,7 @@ help:
 
 .PHONY: start
 start: ## start vpn server
+	@terraform validate terraform/
 	@terraform plan terraform/
 	@terraform apply terraform/
 
